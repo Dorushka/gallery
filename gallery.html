@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Галлерея</title>
+    <div class="row">
+
+
+        <div class="column">
+            <img src=scr/ccc/img1.jpg onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="scr/egon/self-portrait-as-st-sebastian-1914.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="scr/Dora/webcam-toy-photo2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="scr/Gog/Autoportrait_de_Vincent_van_Gogh.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="scr/MUCHA/250px-Alfons_Mucha_LOC_3c05828u.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+
+
+        <div class="column">
+            <img src="scr/HEADE/220px-Martin-johnson-heade.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+
+
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="scr/ccc/999752013_w0_h0_1370419840.jpg" style="width:100%">
+                <img src="scr/ccc/la-1513735257-hbkzlybpmy-snap-image.jpg" style="width:100%">
+                <img src="scr/ccc/young-sick-bacchus-1593-by-caravaggio.jpg" style="width:100%">
+            </div>
+
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="scr/Dora/asdfghj.JPG" style="width:100%">
+                <img src="scr/Dora/ддд.jpg" style="width:100%">
+                <img src="scr/Dora/Одри.png" style="width:100%">
+                <img src="scr/Dora/таня.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="scr/egon/21422_foto_1_03.jpg" style="width:100%">
+                <img src="scr/egon/41844e3d64f94082a806567c9813.jpg" style="width:100%">
+                <img src="scr/egon/20121127_Schiele3.jpg" style="width:100%">
+                <img src="scr/egon/il_570xN.670149524_pxa7.jpg" style="width:100%">
+                <img src="scr/egon/image051.jpg" style="width:100%">
+                <img src="scr/egon/Schiele_-_Handstudie_-_1913.jpeg" style="width:100%">
+                <img src="scr/egon/Schiele_-_Selbstbildnis_-_1913.jpg" style="width:100%">
+                <img src="scr/egon/standing-male-nude-with-a-red-loincloth-1914.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 4</div>
+                <img src="scr/Gog/images.jpg" style="width:100%">
+                <img src="scr/Gog/pshenichnoe_pole_s_kiparisami.jpg" style="width:100%">
+                <img src="scr/Gog/zvezdnaya_noch_vangog.jpg" style="width:100%">
+                <img src="scr/Gog/ирисы-ван-гог2-570x708.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 4</div>
+                <img src="scr/HEADE/heade017.jpg" style="width:100%">
+                <img src="scr/HEADE/Martin_Johnson_Heade_-Blue_Morpho_Butterfly_ATC.jpg" style="width:100%">
+                <img src="scr/HEADE/z-magnolia.jpg" style="width:100%">
+                <img src="scr/HEADE/Без названия.jpg" style="width:100%">
+                <img src="scr/HEADE/Без названия (1).jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 4</div>
+                <img src="scr/MUCHA/201159_main.jpg" style="width:100%">
+                <img src="scr/MUCHA/Alphonse_Mucha_-_Job_Cigarettes_1.jpg" style="width:100%">
+                <img src="scr/MUCHA/hyacinta-700x700.jpg" style="width:100%">
+                <img src="scr/MUCHA/images.jpg" style="width:100%">
+                <img src="scr/MUCHA/images (1).jpg" style="width:100%">
+            </div>
+
+
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="scr/ccc/200px-Bild-Ottavio_Leoni,_Caravaggio.jpg" onclick="currentSlide(1)" alt="Caravaggio">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="scr/egon/self-portrait-as-st-sebastian-1914.jpg" onclick="currentSlide(2)" alt="Egon">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="scr/Dora/webcam-toy-photo2.jpg" onclick="currentSlide(3)" alt="JoHol 1998- &#8734">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="scr/Gog/Autoportrait_de_Vincent_van_Gogh.JPG" onclick="currentSlide(5)" alt="Gog">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="scr/MUCHA/250px-Alfons_Mucha_LOC_3c05828u.jpg" onclick="currentSlide(6)" alt="Mucha">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="scr/HEADE/220px-Martin-johnson-heade.jpg" onclick="currentSlide(7)" alt="Martin Johnson Heade">
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</head>
